@@ -102,10 +102,6 @@
 			<artifactId>cucumber-testng</artifactId>
 			<version>7.11.2</version>
 		</dependency>
-		<dependency>
-			<groupId>com.automation</groupId>
-			<artifactId>BddFramework</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+		
 	</dependencies>
 </project>				
