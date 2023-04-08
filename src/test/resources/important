@@ -1,0 +1,27 @@
+#Jenkins configuration
+
+1=Download Generic Java package(.war)
+
+2=java -jar jenkins.war -httpPort=8080 in cmd prompt from jenkins war file location
+
+3=Manage Jenkins ->Global Tool Configuration -> configure JDK and Maven(pass name and path) ->Save
+
+4=Create a new job
+
+5=Project name ->Advanced ->Use custom workspace ->Directory -$(JENKINS_HOME)/projectname /Alternative-SCM
+
+6=Copy the project under .jenkins folder
+
+7=Source Code Management ->Git(url of github repository
+
+8=MINUTES(0-59),HOURS(0-23),DAYMONTH(1-31),MONTH(1-12),DAYWEEK(0-7) to run job periodically
+
+9=Build Triggers ->Build periodically ->Schedule
+
+10=Build ->Invoke top-level Maven targets ->Maven Version and Goals -mvn test or mvn test -PRegression
+
+11=Install TestNG Results Plugin
+
+12=Post-build Actions ->Publish TestNG Results ->TestNG XML report pattern -**/testng-results.xml
+export JAVA_HOME=$(/usr/libexec/java_home)
+a3bd837e7e8d42348e2078c1cc91bfed
